@@ -1,0 +1,511 @@
+body{
+font-family: Poppins, sans-serif;
+font-size: 15px;
+line-height:1.5;
+padding:0;
+margin:0;
+background-color: #ffffff;
+}
+
+html{
+	scroll-behavior:smooth;
+}	
+
+.container{
+	width:80%;
+	margin: auto;
+	overflow:hidden;
+}
+
+.button_1{
+	font-family:Poppins, sans-serif;
+	background: #7690c1;
+	line-height: 42px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #fff;
+	display: inline-block;
+	font-weight: 500;
+	text-transform: uppercase;
+	float:right;
+}
+
+header{
+	background:#222222;
+	color:#ffffff;
+	min-height:30px;
+	margin:0;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	font-size:16px;
+	margin-top:0;
+	line-height:10px;
+}
+
+header img{
+	width:25px;
+	margin-top:7px;
+}
+
+td{
+	border-bottom:0.5px solid #D3D3D3;
+	padding:25px;
+	text-align:left;
+}
+
+p{
+	font-family:Poppins, sans-serif;
+	font-size:16px;
+	float:right;
+}
+
+hr{
+	display: block;
+	width:80%;
+    margin-top: 0.5;
+    margin-bottom: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+	border-color:#D3D3D3;
+    border-width: 0.5px;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+	
+
+
+.button_2{
+	font-family:Poppins, sans-serif;
+	background: #7690c1;
+	line-height: 42px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #fff;
+	display: inline-block;
+	font-weight: 500;
+	text-transform: uppercase;
+	border:none;
+	margin:auto;
+}
+
+h3{
+	font-size:30px;
+	font-family: "Poppins", sans-serif;
+	color: #222222;
+	font-weight:600;
+}
+
+
+
+#menu{
+	background: #ffffff;
+	color:#000000
+}
+
+#menu a{
+	color:#000000;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+#menu li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+#menu #branding{
+	float:left;
+}
+
+#menu nav{
+	float:right;
+	margin-top:10px;
+}
+
+#menu .current a{
+	color:#7690c1;
+	font-weight:bold;
+}
+
+#menu a:hover{
+	color:#000000;
+	font-weight:bold;
+}
+
+.carousel-wrapper{
+  height:460px;
+  position:relative;
+  width:94%;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-item h2{
+	text-align:center;
+	margin-top:29%;
+	color:white;
+	text-shadow:2px 2px 4px #000000;
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BY8x1xp/doctor-looking-at-pathology-on-chest-x-ray-diagnosing-patient-with-lung-cancer_sayfut4x__F0000.png');
+  background-size:cover;
+  }
+.item-2{
+  background:url('https://cdn.24.co.za/files/Cms/General/d/5193/d1416e41a39746e8a8aa0693abe44ac2.jpg');
+   background-size:cover;
+}
+.item-3{
+  background:url('https://www.ttuhsc.edu/medicine/images/pathology/microscope.jpg');
+   background-size:cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3{ 
+    z-index: 3;
+    opacity: 1;
+  }
+}
+
+#hours{
+	float:left;
+	padding-top:50px;
+	margin-bottom:40px;
+}
+
+aside #sidebar{
+	float:right;
+	width:45%;
+	margin:0;
+	position:absolute;
+	z-index:4;
+	top:570px;
+	right:16px;
+}
+
+
+.shadow{
+	padding:15px;
+	background-color: white;
+	box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+}
+
+#sidebar h3{
+	text-align:center;
+}
+
+input{
+	font-family: Poppins, sans-serif;
+	width:80%;
+	padding:12px 20px;
+	margin:8px 0;
+	box-sizing:border-box;
+}
+
+textarea{
+	font-family: Poppins, sans-serif;
+	width:80%;
+	padding:12px 20px;
+	margin:8px 0;
+	box-sizing:border-box;
+}
+
+select{
+	font-family:Poppins,sans-serif;
+	width:80%;
+	padding:16px 20px;
+	background-color:#f1f1f1;
+}
+
+#sidebar{
+	margin-top:-104px;
+}
+
+th img{
+	width:30px;
+	height:40px;
+}
+
+td{
+	text-align:center;
+}
+
+.packages{
+	display:inline;
+}
+
+.packages h1{
+	font-family:Poppins, sans-serif;
+	font-size:36px;
+	text-align:center;
+}
+
+.dark{
+	width:100%;
+	text-align: left;
+	padding:15px;
+	background-color: #222222;
+	margin:0;
+	position:absolute;
+	z-index:4;
+	top:1895px;
+	right: 0px
+}
+
+.dark ol{
+	text-align:center;
+}
+
+.carousel{
+  height:250px;
+  position:relative;
+  width:92%;
+  margin:0 auto;
+  border: 5px solid #7690c1
+}
+.carousel-test{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel-test h2{
+	text-align:center;
+	color:black;
+}
+
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+[id^="test"] {
+    display: none;
+  }
+
+.test-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('http://www.allwhitebackground.com/images/2/2270.jpg');
+  background-size:cover;
+  }
+.test-2{
+  background:url('http://www.allwhitebackground.com/images/2/2270.jpg');
+   background-size:cover;
+}
+.test-3{
+  background:url('http://www.allwhitebackground.com/images/2/2270.jpg');
+   background-size:cover;
+}
+
+*:target ~ .test-1 {
+    opacity: 0;
+  }
+
+#test-1:target ~ .test-1 {
+    opacity: 1;
+  }
+
+#test-2:target ~ .test-2, #test-3:target ~ .test-3{ 
+    z-index: 3;
+    opacity: 1;
+  }
+}
+
+.banner{
+	width:100%;
+	background:url('https://www.clinicallabs.com.au/media/1477/banner-1-1800x424.jpg');
+	height:300px;
+}
+
+.banner h2{
+	text-align:center;
+	color:white;
+	text-shadow:2px 2px 4px #000000;
+	font-size:50px;	
+}
+
+ul#tests li{
+	list-style: none;
+	padding:20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+	width:95%;
+	text-align:right;
+}
+
+#price h3{
+	text-align:center;
+}
+
+.technology h1{
+	font-size:30px;
+	color:black;
+	text-align:center;
+}
+
+.technology p{
+	text-align:center;
+}
+
+.corporate_intro p{
+	text-align:center;
+}
+
+.offerings{
+	display:inline;
+}
+
+
+.offerings h1{
+	font-family:Poppins, sans-serif;
+	font-size:36px;
+	text-align:center;
+}
+
+.patients_intro p{
+	font-style:bold;
+}
+
+.offers{
+	display:inline;
+}
+
+
+.offers h1{
+	font-family:Poppins, sans-serif;
+	font-size:36px;
+	text-align:center;
+}
+
+.offers table{
+	border:0.5px solid #D3D3D3;
+	padding:25px;
+}
+
+.offers td{
+	border:none;
+}
+
+.map_outer{
+	text-align:right;
+	height:420px;
+	width:1080px;
+}
+
+.map_canvas{
+	overflow:hidden;
+	background:none;
+	height:420px;
+	width:1080px;
+}
+
+.centered{
+	position:absolute;
+	top:52%;
+	right:50%;
+	left:44%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	color:white;
+	text-shadow:2px 2px 4px #000000;
+	font-size:50px;
+}
